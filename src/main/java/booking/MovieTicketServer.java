@@ -16,17 +16,12 @@ public class MovieTicketServer {
     public void bookTicket(String customerName, int numberOfSeats){
         System.out.println("Hi," + customerName+ ": " + availableSeats + "Seats available for" + movieName);
 
-        if (numberOfSeats > availableSeats) {
+        if (numberOfSeats > this.availableSeats) {
             System.out.println("Hi," + customerName+ ": Seats not available for " + movieName);
-            return;
+        } else {
+            this.availableSeats -= numberOfSeats;
+            System.out.println("Hi," + customerName+ ": " + numberOfSeats + "Seats booked successfully for" + movieName);
         }
-        availableSeats -= numberOfSeats;
-        System.out.println("Hi," + customerName+ ": " + numberOfSeats + "Seats booked successfully for" + movieName);
-    }
-
-    // Synchronized method to check the available seats
-    public synchronized int getAvailableSeats() {
-        return availableSeats;
     }
 
 }
