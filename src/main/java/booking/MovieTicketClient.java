@@ -1,12 +1,18 @@
 package booking;
 
 public class MovieTicketClient extends Thread {
-    // TBD
 
-    public MovieTicketClient() {
+    private MovieTicketServer movieTicketServer;
+    private String name;
+    private int numOfTickets;
+
+    public MovieTicketClient(MovieTicketServer movieTicketServer, String name, int numOfTickets) {
         // TBD
+        this.movieTicketServer = movieTicketServer;
+        this.name = name;
+        this.numOfTickets = numOfTickets;
     }
 
     public void run() {
-        // TBD
+
     }

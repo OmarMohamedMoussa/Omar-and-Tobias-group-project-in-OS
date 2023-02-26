@@ -5,21 +5,21 @@ import java.util.Map;
 
 public class MovieTicketServer {
 
-
+    private String name;
     private int availableSeats;
     private Map<String, Integer> seatsBooked = new HashMap<>();
 
 
-    public void (String movieName) {
-        name = movieName;
+    public void MovieTicketServer(String movieName) {
+        this.name = movieName;
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String movieName) {
-        name = movieName;
+        this.name = movieName;
     }
 
     public MovieTicketServer() {
