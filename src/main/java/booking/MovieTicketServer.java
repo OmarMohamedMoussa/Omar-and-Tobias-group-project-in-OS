@@ -13,7 +13,7 @@ public class MovieTicketServer {
     }
 
     // Method to book tickets
-    public void bookTicket(String customerName, int numberOfSeats){
+    public synchronized void bookTicket(String customerName, int numberOfSeats){
         System.out.println("Hi," + customerName+ ": " + availableSeats + "Seats available for" + movieName);
 
         if (numberOfSeats > this.availableSeats) {
