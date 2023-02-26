@@ -20,8 +20,8 @@ this way the theater doesn't get overbooked.
 -------------------------------------------------------------------
 ### Observations
 We observed that each person received feedback on how many tickets the person had booked, 
-and that the method in the MovieTicketServer class could not be ran simultaneously. Also if 
-there was no more tickets left, the users would be notifed about it when they tryied to book 
+and that the method in the MovieTicketServer class could not be run simultaneously. Also if 
+there was no more tickets left, the users would be notified about it when they tried to book 
 ticket for the movie.
 
 -------------------------------------------------------------------
