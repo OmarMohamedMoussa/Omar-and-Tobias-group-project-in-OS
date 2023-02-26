@@ -14,5 +14,5 @@ public class MovieTicketClient extends Thread {
     }
 
     public void run() {
-
+        movieTicketServer.bookTicket(this.name, this.numOfTickets);
     }
