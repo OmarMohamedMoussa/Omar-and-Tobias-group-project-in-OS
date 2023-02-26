@@ -24,4 +24,9 @@ public class MovieTicketServer {
         System.out.println("Hi," + customerName+ ": " + numberOfSeats + "Seats booked successfully for" + movieName);
     }
 
+    // Synchronized method to check the available seats
+    public synchronized int getAvailableSeats() {
+        return availableSeats;
+    }
+
 }
